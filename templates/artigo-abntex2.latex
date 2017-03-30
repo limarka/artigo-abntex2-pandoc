@@ -273,6 +273,10 @@ $body$
 % ----------------------------------------------------------
 \bibliography{referencias}
 
+$for(include-after)$
+$include-after$
+
+$endfor$
 
 
 \end{document}

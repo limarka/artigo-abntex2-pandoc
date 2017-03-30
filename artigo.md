@@ -30,4 +30,14 @@ Quadro exemplo: Exemplo de quadro
 
 Fonte: \cite{dewey1980}.
 
-Ver o \autoref{exemplo}.
+: Exemplo de tabela \label{tabexemplo}
+
+| Frutra | Valor |
+|:------:|-------|
+|Banana  | R$ 1,0|
+|Morango | R$ 2,0|
+
+Fonte: \cite{dewey1980}.
+
+Ver o \autoref{exemplo} e a \autoref{tabexemplo}.
+
