@@ -155,6 +155,40 @@ Araujo\thanks{laurocesar@laurocesar.com}}
 % Espaçamento simples
 \SingleSpacing
 
+
+%---
+% CONFIGURAÇÕES EXTRA DO LIMARKA
+%---
+
+% Configura citações de pandoc para 4cm à esquerda (utiliza o ambiente quote)
+\renewenvironment{quote}
+  {\small\list{}{\rightmargin=0.1cm \leftmargin=4cm}%
+   \item\relax}
+  {\endlist}
+
+% ---
+% Possibilita criação de Quadros e Lista de quadros.
+% Ver https://github.com/abntex/abntex2/issues/176
+%
+\newcommand{\quadroname}{Quadro}
+\newcommand{\listofquadrosname}{Lista de quadros}
+
+\newfloat[chapter]{quadro}{loq}{\quadroname}
+\newlistof{listofquadros}{loq}{\listofquadrosname}
+\newlistentry{quadro}{loq}{0}
+
+% configurações para atender às regras da ABNT
+\setfloatadjustment{quadro}{\centering}
+\counterwithout{quadro}{chapter}
+\renewcommand{\cftquadroname}{\quadroname\space} 
+\renewcommand*{\cftquadroaftersnum}{\hfill--\hfill}
+% ---
+
+% Para incluir páginas PDF (ficha catalografica e folha de aprovação)
+\usepackage[dvipsnames]{xcolor} % http://tex.stackexchange.com/questions/124636/package-xcolor-error-undefined-colors-maroon-royal-blue-when-master-has-pdf
+\usepackage{pdfpages}
+\usepackage{longtable,ltcaption} % para as tabelas pandoc e quadros ABNT
+
 % ----
 % Início do documento
 % ----
