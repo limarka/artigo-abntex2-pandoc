@@ -10,7 +10,7 @@ Chat para conversar sobre esse repositório: [https://gitter.im/abntex/limarka](
 
 - ruby
 - rake
-- guard
+- [guard](https://github.com/hawx/guard-shell)
 - pandoc
 - pandoc_abnt
 - latex
