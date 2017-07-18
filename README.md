@@ -26,6 +26,10 @@ Para se valer da geração automática do pdf, também será necessário:
 - guard-shell
 - pdfgrep
 
+## No Windows
+
+Para executar o filtro pandoc_abnt no Windows é necessário configurar variável `PANDOC_ABNT_BAT` de ambiente conforme descrito no [wiki do limarka].
+
 ## Instalação das dependências no OSX
 
 O comando abaixo instalará as requerimentos supracitados (mínimos e adicionais).
